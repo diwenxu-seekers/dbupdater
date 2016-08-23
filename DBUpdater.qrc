@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/aboutbtn.png</file>
+        <file>resources/log_alert.png</file>
+        <file>resources/log_critical.png</file>
+        <file>resources/log_debug.png</file>
+        <file>resources/log_emerg.png</file>
+        <file>resources/log_err.png</file>
+        <file>resources/log_info.png</file>
+        <file>resources/log_notice.png</file>
+        <file>resources/log_trace.png</file>
+        <file>resources/log_warn.png</file>
+        <file>resources/openbtn.png</file>
+        <file>resources/startbtn.png</file>
+        <file>resources/stopbtn.png</file>
+        <file>resources/compact_db.png</file>
+        <file>resources/create_db_index.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,38 @@
+===================================================
+DBUpdater Version History
+===================================================
+
+v1.2.5 (30 Nov 2015)
+- Fix calculation for distfs-cross threshold
+- New calculation incomplete bar for currency rate
+
+v1.2.4 (26 Nov 2015)
+- revert create index using full index
+- patch for dist resistance and dist support bug, where in some case may throw out of range index error
+
+v1.2.3 (24 Nov 2015)
+- new database indexing: implement partial index to surpress database size
+- rewrite dist resistance and dist support calculation
+
+v1.2.2 (17 Nov 2015)
+- fix incomplete bar update behaviour, using 5min as reference
+- clean up code styling and disable debug code when compiling release so it produce smaller executable
+- add sqlite compile option to omit deprecated feature and "explain" 
+
+v1.2.0 (13 Nov 2015)
+- new feature incomplete bar to create realtime OHLC
+- bugfix dist(fs-cross) missing value on daily, weekly, monthly
+- new class DateTimeHelper, useful to generate next business date for all timeframe
+
+v1.1.0 (09 Nov 2015)
+- new indicator for currency (ccy_rate) it is for @NIY, HHI, HSI 
+- new rate of change (roc)
+- new dist(fs-cross) with threshold
+- new rank for rsi, slowk, slowd
+- new rank for f-slope, s-slope for positive and negative
+- change rank for distfs into positive and negative
+
+Known bugs:
+- slow for hourly bar update (fixed in v1.2.4)
+- slow for incomplete bar update (fixed in v1.2.4)
+- sometime it crash (still investigating... maybe new calculation of distres/distsup or datetimehelper)
